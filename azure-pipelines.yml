@@ -1,5 +1,5 @@
 pool:
-  name: 'dev-pool'
+  name: 'riyazpool2'
   
 variables:
   version: 'frontend_$(Build.BuildId)'
@@ -23,7 +23,7 @@ stages:
     - task: Docker@2
       displayName: 'Build Docker Image'
       inputs:
-        containerRegistry: 'perseverance01'
+        containerRegistry: 'riyazproj2new'
         repository: 'perseverance-project'
         command: 'build'
         Dockerfile: '**/Dockerfile'
